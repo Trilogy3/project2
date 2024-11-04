@@ -1,6 +1,6 @@
 <!-- src/routes/home/+page.svelte -->
 <script>
-    // Any specific logic for the home page can go here
+    import './home.css';
 </script>
 
 <h1>Welcome to the Home Page!</h1>

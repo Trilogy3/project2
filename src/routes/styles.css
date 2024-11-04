@@ -6,7 +6,6 @@
     background-repeat: no-repeat;
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
     overflow-x: hidden;
     padding-top: 4rem; /* Adjust for navbar */
 }
@@ -49,6 +48,7 @@ main {
     align-items: center;
     position: fixed;
     bottom: 0;
+    font-weight: bold;
     left: 0;
     width: 100%;
     z-index: 10;
