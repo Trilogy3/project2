@@ -13,6 +13,7 @@
     min-height: 100vh; /* Ensures the body takes at least the full viewport height */
 	font-family: poppins;
 	font-weight: bold;
+	overflow-x: hidden;
 }
 .navbar {
     width: 100%;
