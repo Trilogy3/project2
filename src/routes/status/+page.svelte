@@ -21,35 +21,43 @@
         align-items: center;
         justify-content: center;
         height: 100vh; /* Full height of the viewport */
-        padding: 20px; /* Padding around the content */
-        background-color: #222; /* Dark background for the container */
+        padding: 40px; /* Increased padding around the content */
+        background-color: #1e1e1e; /* Darker background for a more professional look */
         border-radius: 10px; /* Rounded corners for the container */
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6); /* Deeper shadow for more depth */
+        color: white; /* White text for better contrast */
+        font-family: 'Arial', sans-serif; /* Clean font */
     }
 
     h1 {
         font-size: 2.5em;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+        text-align: center; /* Centered title */
     }
 
     p {
         font-size: 1.2em;
-        margin-bottom: 40px;
-        text-align: center;
+        margin-bottom: 30px;
+        text-align: center; /* Centered paragraph */
+        line-height: 1.5; /* Improved line height for readability */
     }
 
     .button-container {
         display: flex;
-        gap: 20px; /* Space between buttons */
+        justify-content: center; /* Center buttons horizontally */
+        gap: 30px; /* Increased space between buttons */
+        flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
     }
 
     .button {
-        padding: 15px 30px;
+        padding: 15px 25px; /* Adjusted padding for better sizing */
         font-size: 1.2em;
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        transition: background-color 0.3s;
+        transition: background-color 0.3s, transform 0.2s; /* Smooth background color and transform */
+        font-weight: bold; /* Bold text for buttons */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for buttons */
     }
 
     .button.red {
@@ -59,6 +67,7 @@
 
     .button.red:hover {
         background-color: #c0392b; /* Darker red on hover */
+        transform: translateY(-2px); /* Lift effect on hover */
     }
 
     .button.yellow {
@@ -68,6 +77,7 @@
 
     .button.yellow:hover {
         background-color: #e0b90f; /* Darker yellow on hover */
+        transform: translateY(-2px); /* Lift effect on hover */
     }
 
     .button.green {
@@ -77,6 +87,7 @@
 
     .button.green:hover {
         background-color: #27ae60; /* Darker green on hover */
+        transform: translateY(-2px); /* Lift effect on hover */
     }
 </style>
 
