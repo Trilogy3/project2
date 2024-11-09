@@ -14,19 +14,6 @@
 </script>
 
 <style>
-    :global(body) {
-        font-family: Arial, sans-serif;
-        background-color: #222; /* Dark background for the entire page */
-        color: white; /* Default text color */
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh; /* Full height of the viewport */
-    }
-
     h1 {
         font-size: 2.5em;
         margin-bottom: 20px;
