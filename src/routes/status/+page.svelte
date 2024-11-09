@@ -14,6 +14,19 @@
 </script>
 
 <style>
+    /* Container for the entire content */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Full height of the viewport */
+        padding: 20px; /* Padding around the content */
+        background-color: #222; /* Dark background for the container */
+        border-radius: 10px; /* Rounded corners for the container */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    }
+
     h1 {
         font-size: 2.5em;
         margin-bottom: 20px;
@@ -67,7 +80,7 @@
     }
 </style>
 
-<div>
+<div class="container">
     <h1>Status Page</h1>
     <p>This page provides the current status of various functionalities.</p>
 
