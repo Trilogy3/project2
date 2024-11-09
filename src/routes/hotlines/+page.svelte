@@ -54,6 +54,7 @@
         padding: 15px;
         margin: 10px 0;
         background-color: #444; /* Slightly lighter background for hotline boxes */
+        text-align: center; /* Center the text within the hotline box */
     }
     .hotline h2 {
         margin: 0;
