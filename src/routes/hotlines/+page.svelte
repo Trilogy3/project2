@@ -1,5 +1,4 @@
 <script>
-    // You can define any specific logic for the hotlines page here
     const hotlines = [
         {
             name: "East Bajac-Bajac Fire and Rescue",
@@ -30,50 +29,65 @@
 </script>
 
 <style>
-    .hotline-container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        font-family: Arial, sans-serif;
-        background-color: #000000; /* Optional: Set a dark background for contrast */
-        color: white; /* Optional: Set default text color to white */
+    .container {
+        background-color: #000;
+        color: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        max-width: 500px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 40px auto;
     }
+
     h1 {
         text-align: center;
-        color: white; /* Set the color of the h1 to white */
-        font-size: 2.5em; /* Make the h1 bigger */
-        margin-bottom: 20px; /* Add some space below the h1 */
+        color: white;
+        font-size: 2.5em;
+        margin-bottom: 20px;
     }
-    p {
-        color: white; /* Set the color of the p to white */
-        text-align: center; /* Center the paragraph text */
+
+    .description {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #ccc;
     }
+
     .hotline {
-        border: 1px solid #ccc;
+        border: 1px solid #666;
         border-radius: 5px;
-        padding: 15px;
-        margin: 10px 0;
-        background-color: #444; /* Slightly lighter background for hotline boxes */
-        text-align: center; /* Center the text within the hotline box */
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #333;
+        text-align: left;
     }
+
     .hotline h2 {
         margin: 0;
-        color: #007BFF; /* Keep hotline names colored for emphasis */
+        font-size: 1.5em;
+        color: #4caf50;
     }
+
     .hotline p {
-        margin: 5px 0;
-        color: white; /* Ensure hotline description is white */
+        margin: 8px 0;
+        color: #ddd;
+    }
+
+    .hotline .number {
+        font-weight: bold;
+        color: #bbb;
     }
 </style>
 
-<div class="hotline-container">
-    <h1>Hotlines</h1>
-    <p>If you need assistance, please contact the appropriate hotline below:</p>
-    
+<div class="container">
+    <h1>Emergency Hotlines</h1>
+    <p class="description">If you need assistance, please contact one of the following hotlines:</p>
+
     {#each hotlines as hotline}
         <div class="hotline">
             <h2>{hotline.name}</h2>
-            <p><strong>Phone Number:</strong> {hotline.number}</p>
+            <p class="number"><strong>Phone Number:</strong> {hotline.number}</p>
             <p>{hotline.description}</p>
         </div>
     {/each}
