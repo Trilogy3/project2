@@ -14,86 +14,82 @@
 </script>
 
 <style>
-    /* Container for the entire content */
     .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh; /* Full height of the viewport */
-        padding: 40px; /* Increased padding around the content */
-        background-color: #1e1e1e; /* Darker background for a more professional look */
-        border-radius: 10px; /* Rounded corners for the container */
-        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6); /* Deeper shadow for more depth */
-        color: white; /* White text for better contrast */
-        font-family: 'Arial', sans-serif; /* Clean font */
+        background-color: #000;
+        color: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        max-width: 500px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 40px auto;
+        text-align: center;
+        font-family: Arial, sans-serif;
     }
 
     h1 {
         font-size: 2.5em;
         margin-bottom: 15px;
-        text-align: center; /* Centered title */
+        color: white;
     }
 
     p {
         font-size: 1.2em;
         margin-bottom: 30px;
-        text-align: center; /* Centered paragraph */
-        line-height: 1.5; /* Improved line height for readability */
+        color: #ccc;
     }
 
     .button-container {
         display: flex;
-        justify-content: center; /* Center buttons horizontally */
-        gap: 30px; /* Increased space between buttons */
-        flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+        flex-direction: column;
+        gap: 20px;
     }
 
     .button {
-        padding: 15px 25px; /* Adjusted padding for better sizing */
+        padding: 15px;
         font-size: 1.2em;
+        font-weight: bold;
+        color: white;
         border: none;
-        border-radius: 5px;
+        border-radius: 8px;
         cursor: pointer;
-        transition: background-color 0.3s, transform 0.2s; /* Smooth background color and transform */
-        font-weight: bold; /* Bold text for buttons */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for buttons */
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s, transform 0.2s;
     }
 
     .button.red {
-        background-color: #e74c3c; /* Red for "I need help!" */
-        color: white;
+        background-color: #e74c3c;
     }
 
     .button.red:hover {
-        background-color: #c0392b; /* Darker red on hover */
-        transform: translateY(-2px); /* Lift effect on hover */
+        background-color: #c0392b;
+        transform: translateY(-2px);
     }
 
     .button.yellow {
-        background-color: #f1c40f; /* Yellow for "Safe but injured" */
+        background-color: #f1c40f;
         color: black;
     }
 
     .button.yellow:hover {
-        background-color: #e0b90f; /* Darker yellow on hover */
-        transform: translateY(-2px); /* Lift effect on hover */
+        background-color: #e0b90f;
+        transform: translateY(-2px);
     }
 
     .button.green {
-        background-color: #2ecc71; /* Green for "I'm ok" */
-        color: white;
+        background-color: #2ecc71;
     }
 
     .button.green:hover {
-        background-color: #27ae60; /* Darker green on hover */
-        transform: translateY(-2px); /* Lift effect on hover */
+        background-color: #27ae60;
+        transform: translateY(-2px);
     }
 </style>
 
 <div class="container">
     <h1>Status Page</h1>
-    <p>This page provides the current status of various functionalities.</p>
+    <p>Indicate your current status by selecting an option below:</p>
 
     <div class="button-container">
         <button class="button red" on:click={handleHelp}>I need help!</button>
