@@ -16,7 +16,7 @@
 <style>
     /* Container for the entire content */
     .container {
-        display: flex;
+        display: center;
         flex-direction: column;
         align-items: center;
         justify-content: center;
