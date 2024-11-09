@@ -13,9 +13,8 @@
     }
 </script>
 
-<!-- svelte-ignore css_unused_selector -->
 <style>
-    body {
+    :global(body) {
         font-family: Arial, sans-serif;
         background-color: #222; /* Dark background for the entire page */
         color: white; /* Default text color */
@@ -27,19 +26,23 @@
         justify-content: center;
         height: 100vh; /* Full height of the viewport */
     }
+
     h1 {
         font-size: 2.5em;
         margin-bottom: 20px;
     }
+
     p {
         font-size: 1.2em;
         margin-bottom: 40px;
         text-align: center;
     }
+
     .button-container {
         display: flex;
         gap: 20px; /* Space between buttons */
     }
+
     .button {
         padding: 15px 30px;
         font-size: 1.2em;
@@ -48,24 +51,30 @@
         cursor: pointer;
         transition: background-color 0.3s;
     }
+
     .button.red {
         background-color: #e74c3c; /* Red for "I need help!" */
         color: white;
     }
+
     .button.red:hover {
         background-color: #c0392b; /* Darker red on hover */
     }
+
     .button.yellow {
         background-color: #f1c40f; /* Yellow for "Safe but injured" */
         color: black;
     }
+
     .button.yellow:hover {
         background-color: #e0b90f; /* Darker yellow on hover */
     }
+
     .button.green {
         background-color: #2ecc71; /* Green for "I'm ok" */
         color: white;
     }
+
     .button.green:hover {
         background-color: #27ae60; /* Darker green on hover */
     }
