@@ -35,7 +35,7 @@
         margin: 0 auto;
         padding: 20px;
         font-family: Arial, sans-serif;
-        background-color: #333; /* Optional: Set a dark background for contrast */
+        background-color: #000000; /* Optional: Set a dark background for contrast */
         color: white; /* Optional: Set default text color to white */
     }
     h1 {
