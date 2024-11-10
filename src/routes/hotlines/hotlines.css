@@ -7,6 +7,7 @@
     max-width: 1000px;
     margin: 40px auto;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
 }
 
 h1 {
@@ -25,15 +26,15 @@ h1 {
 /* Hotline Container Styles */
 .hotline-container {
     display: flex;
-    flex-wrap: wrap; /* Wrap items onto a new row if there's not enough space */
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 /* Hotline Box Styles */
 .hotline {
-    flex: 1 1 calc(33.33% - 20px); /* Make each item one-third width with space */
-    min-width: 250px; /* Minimum width to help with responsiveness */
-    background-color: #ffffff; /* Solid color with transparency */
+    flex: 1 1 calc(33.33% - 20px);
+    min-width: 250px;
+    background-color: #ffffff;
     border: 1px solid #666;
     border-radius: 5px;
     padding: 20px;
@@ -53,71 +54,63 @@ h1 {
 }
 
 /* Responsive Adjustments */
+
+/* Large screens (desktops and larger tablets) */
 @media (max-width: 1200px) {
-    /* Reduce container padding and adjust font sizes for medium devices */
     .container {
         padding: 30px;
     }
-
     h1 {
         font-size: 2.2em;
     }
-
-    .hotline h2 {
-        font-size: 1.4em;
-    }
 }
 
+/* Medium screens (tablets) */
 @media (max-width: 992px) {
-    /* Adjust the layout to show two items per row */
-    .hotline {
-        flex: 1 1 calc(50% - 20px); /* Each item takes half the width */
-    }
-}
-
-@media (max-width: 768px) {
-    .hotline-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-    }
-
-    .hotline {
-        flex: 1 1 100%; /* Each hotline takes full width on mobile */
-        margin-bottom: 20px;
-    }
-
     .container {
-        padding: 20px;
+        padding: 25px;
     }
-
     h1 {
         font-size: 2em;
     }
-
-    .hotline h2 {
-        font-size: 1.3em;
+    .hotline {
+        flex: 1 1 calc(50% - 20px);
     }
 }
 
-@media (max-width: 480px) {
-    /* Adjust font sizes and padding for small mobile devices */
+/* Small screens (large phones and small tablets) */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
     h1 {
         font-size: 1.8em;
     }
+    .hotline-container {
+        flex-direction: column;
+    }
+    .hotline {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+}
 
+/* Extra small screens (small phones) */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
     .description {
         font-size: 0.9em;
     }
-
     .hotline h2 {
         font-size: 1.2em;
     }
-
     .hotline .number {
         font-size: 1em;
-    }
-
-    .container {
-        padding: 15px;
-        margin: 20px;
     }
 }
