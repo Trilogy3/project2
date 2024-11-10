@@ -1,76 +1,77 @@
 /* Container and General Styles */
 .container {
-    background-color: rgba(255, 76, 76, 0.9); /* Semi-transparent background for emergency feel */
-    color: #ffffff;
-    padding: 2.5rem;
-    border-radius: 12px;
+    background-color: rgba(255, 76, 76, 0.7); /* Transparent background */
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
     max-width: 1000px;
     margin: 40px auto;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 h1 {
-    color: #ffffff;
-    font-size: 2.8rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 .description {
-    font-size: 1.2rem;
-    color: #e0e0e0;
-    margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ccc;
 }
 
 /* Hotline Container Styles */
 .hotline-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Wrap items onto a new row if there's not enough space */
     gap: 20px;
-    justify-content: center;
 }
 
 /* Hotline Box Styles */
 .hotline {
-    flex: 1 1 calc(33.33% - 20px); /* Each item takes up a third of the row */
-    min-width: 250px;
-    background-color: rgba(255, 255, 255, 0.9); /* Light transparent background */
-    border: 1px solid rgba(255, 76, 76, 0.6);
-    border-radius: 8px;
+    flex: 1 1 calc(33.33% - 20px); /* Make each item one-third width with space */
+    min-width: 250px; /* Minimum width to help with responsiveness */
+    background-color: #ffffff; /* Solid color with transparency */
+    border: 1px solid #666;
+    border-radius: 5px;
     padding: 20px;
     box-sizing: border-box;
-    color: #333;
-    text-align: left;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.hotline:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #030303;
 }
 
 .hotline h2 {
-    font-size: 1.5rem;
-    color: #ff6347; /* Emergency-themed accent color */
-    margin: 0 0 10px;
+    margin: 0;
+    font-size: 1.5em;
+    color: #4caf50;
 }
 
 .hotline .number {
     font-weight: bold;
-    color: #333;
-    font-size: 1.3rem;
+    color: #000000;
 }
 
 /* Responsive Adjustments */
-@media (max-width: 1024px) {
-    h1 {
-        font-size: 2.5rem;
+@media (max-width: 1200px) {
+    /* Reduce container padding and adjust font sizes for medium devices */
+    .container {
+        padding: 30px;
     }
 
-    .description {
-        font-size: 1.1rem;
+    h1 {
+        font-size: 2.2em;
+    }
+
+    .hotline h2 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Adjust the layout to show two items per row */
+    .hotline {
+        flex: 1 1 calc(50% - 20px); /* Each item takes half the width */
     }
 }
 
@@ -83,22 +84,40 @@ h1 {
         flex: 1 1 100%; /* Each hotline takes full width on mobile */
         margin-bottom: 20px;
     }
-}
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 2rem;
+    .container {
+        padding: 20px;
     }
 
-    .description {
-        font-size: 1rem;
+    h1 {
+        font-size: 2em;
     }
 
     .hotline h2 {
-        font-size: 1.3rem;
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust font sizes and padding for small mobile devices */
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .description {
+        font-size: 0.9em;
+    }
+
+    .hotline h2 {
+        font-size: 1.2em;
     }
 
     .hotline .number {
-        font-size: 1.1rem;
+        font-size: 1em;
+    }
+
+    .container {
+        padding: 15px;
+        margin: 20px;
     }
 }
