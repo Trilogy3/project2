@@ -40,17 +40,32 @@
     import './request.css';
 </script>
 
-<style>
+<<style>
+    /* Ensures body takes up full viewport height and prevents overflow */
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden; /* Prevents scrolling */
+        font-family: 'Poppins', sans-serif;
+        background-color: #f2f2f2;
+    }
+
     .container {
-        background-color: #000;
-        color: white;
-        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        color: black;
+        padding: 30px;
         border-radius: 10px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-        max-width: 500px;
-        width: 100%;
+        max-width: 600px; /* Set max width for larger screens */
+        width: 90%; /* Adjust width to fit the screen without overflow */
         box-sizing: border-box;
-        margin: 40px auto; /* Centers the container */
+        margin: 0 auto; /* Centers the container */
+        height: auto;
     }
 
     .form-section {
@@ -67,13 +82,13 @@
     input[type="number"],
     select,
     textarea {
-        width: 100%;
+        width: 100%; /* Takes full container width */
         padding: 10px;
         margin-bottom: 15px;
         border: none;
         border-radius: 5px;
-        background-color: #333;
-        color: white;
+        background-color: #f9f9f9;
+        color: #333;
         box-sizing: border-box;
     }
 
@@ -86,7 +101,7 @@
     }
 
     button[type="submit"] {
-        width: 100%;
+        width: 100%; /* Full-width button */
         padding: 12px;
         background-color: #4caf50;
         color: white;
