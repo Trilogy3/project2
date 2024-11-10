@@ -1,10 +1,87 @@
-body {
-    color: white;
-}
-h1 {
-    font-size: clamp(2rem, 3vw + 1rem, 4rem);
+/* General Styling */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
 }
 
-p {
-    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.5rem);
+.circle-button {
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+}
+
+/* Individual Button Colors */
+.fire-button {
+    background-color: #FF5733;
+}
+
+.medical-button {
+    background-color: #28A745;
+}
+
+.police-button {
+    background-color: #007BFF;
+}
+
+.others-button {
+    background-color: #FFC107;
+}
+
+.circle-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Styling */
+
+/* Small Screens - 2x2 grid with smaller buttons */
+@media (max-width: 600px) {
+    .button-container {
+        gap: 15px;
+    }
+    .circle-button {
+        width: 80px;
+        height: 80px;
+        font-size: 14px;
+    }
+    .button-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+}
+
+/* Medium Screens - Larger buttons, but still in grid layout */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .circle-button {
+        width: 100px;
+        height: 100px;
+        font-size: 16px;
+    }
+    .button-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Large Screens - Large buttons in a single row */
+@media (min-width: 1025px) {
+    .button-container {
+        display: flex;
+    }
+    .circle-button {
+        width: 250px;
+        height: 250px;
+        font-size: 20px;
+    }
 }

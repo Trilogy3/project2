@@ -1,94 +1,108 @@
 <script>
-    const hotlines = [
-        {
-            name: "East Bajac-Bajac Fire and Rescue",
-            number: "0917-436-5998",
-            description: "For fire emergencies and rescue services."
-        },
-        {
-            name: "Old Cabalan Quick Emergency Response",
-            number: "603-1700",
-            description: "For quick response to emergencies and urgent assistance."
-        },
-        {
-            name: "SBMA Fire Department",
-            number: "252-4830",
-            description: "For fire safety and emergency services in the SBMA area."
-        },
-        {
-            name: "Gordon Heights Fire & Rescue",
-            number: "223-5497",
-            description: "For immediate fire and rescue assistance."
-        },
-        {
-            name: "City Hall Olongapo",
-            number: "222-2565",
-            description: "For municipal services and local government inquiries."
-        }
-    ];
+    import './hotlines.css';
 </script>
-
-<style>
-    .container {
-        background-color: #000;
-        color: white;
-        padding: 40px;
-        border-radius: 10px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-        max-width: 500px;
-        width: 100%;
-        box-sizing: border-box;
-        margin: 40px auto;
-    }
-
-    h1 {
-        text-align: center;
-        color: white;
-        font-size: 2.5em;
-        margin-bottom: 20px;
-    }
-
-    .description {
-        text-align: center;
-        margin-bottom: 20px;
-        color: #ccc;
-    }
-
-    .hotline {
-        border: 1px solid #666;
-        border-radius: 5px;
-        padding: 20px;
-        margin-bottom: 20px;
-        background-color: #333;
-        text-align: left;
-    }
-
-    .hotline h2 {
-        margin: 0;
-        font-size: 1.5em;
-        color: #4caf50;
-    }
-
-    .hotline p {
-        margin: 8px 0;
-        color: #ddd;
-    }
-
-    .hotline .number {
-        font-weight: bold;
-        color: #bbb;
-    }
-</style>
 
 <div class="container">
     <h1>Emergency Hotlines</h1>
     <p class="description">If you need assistance, please contact one of the following hotlines:</p>
-
-    {#each hotlines as hotline}
+    
+    <div class="hotline-container">
+        <!-- Existing Hotlines -->
         <div class="hotline">
-            <h2>{hotline.name}</h2>
-            <p class="number"><strong>Phone Number:</strong> {hotline.number}</p>
-            <p>{hotline.description}</p>
+            <div class="hotline-content">
+                <h2>East Bajac-Bajac Fire and Rescue</h2>
+                <p class="number"><strong>Phone Number:</strong> 0917-436-5998</p>
+                <p>For fire emergencies and rescue services.</p>
+            </div>
         </div>
-    {/each}
+        
+        <div class="hotline">
+            <div class="hotline-content">
+                <h2>Old Cabalan Quick Emergency Response</h2>
+                <p class="number"><strong>Phone Number:</strong> 603-1700</p>
+                <p>For quick response to emergencies and urgent assistance.</p>
+            </div>
+        </div>
+        
+        <div class="hotline">
+            <div class="hotline-content">
+                <h2>SBMA Fire Department</h2>
+                <p class="number"><strong>Phone Number:</strong> 252-4830</p>
+                <p>For fire safety and emergency services in the SBMA area.</p>
+            </div>
+        </div>
+        
+        <div class="hotline">
+            <div class="hotline-content">
+                <h2>Gordon Heights Fire & Rescue</h2>
+                <p class="number"><strong>Phone Number:</strong> 223-5497</p>
+                <p>For immediate fire and rescue assistance.</p>
+            </div>
+        </div>
+        
+        <div class="hotline">
+            <div class="hotline-content">
+                <h2>City Hall Olongapo</h2>
+                <p class="number"><strong>Phone Number:</strong> 222-2565</p>
+                <p>For municipal services and local government inquiries.</p>
+            </div>
+        </div>
+        
+        <!-- Additional Hotlines -->
+        <div class="hotline">
+            <div class="hotline-content">
+                <h2>Olongapo City Police Station</h2>
+                <p class="number"><strong>Phone Number:</strong> 167</p>
+                <p>For police assistance, crime reporting, and public safety services.</p>
+            </div>
+        </div>
+        
+        <div class="hotline">
+            <div class="hotline-content">
+                <h2>Olongapo City Medical Center</h2>
+                <p class="number"><strong>Phone Number:</strong> 222-2980</p>
+                <p>For medical emergencies and health inquiries in Olongapo.</p>
+            </div>
+        </div>
+        
+        <div class="hotline">
+            <div class="hotline-content">
+                <h2>SBMA Police Department</h2>
+                <p class="number"><strong>Phone Number:</strong> 911</p>
+                <p>For police and emergency services within the Subic Bay Freeport Zone.</p>
+            </div>
+        </div>
+        
+        <div class="hotline">
+            <div class="hotline-content">
+                <h2>Barangay Hall Hotline</h2>
+                <p class="number"><strong>Phone Number:</strong> 224-2264</p>
+                <p>For local community concerns, incidents, and barangay assistance.</p>
+            </div>
+        </div>
+        
+        <div class="hotline">
+            <div class="hotline-content">
+                <h2>Disaster Response and Rescue</h2>
+                <p class="number"><strong>Phone Number:</strong> 224-5170</p>
+                <p>For assistance in natural disasters and large-scale emergencies.</p>
+            </div>
+        </div>
+        
+        <div class="hotline">
+            <div class="hotline-content">
+                <h2>Red Cross Olongapo Chapter</h2>
+                <p class="number"><strong>Phone Number:</strong> 222-4450</p>
+                <p>For blood donations, first aid, and emergency assistance.</p>
+            </div>
+        </div>
+        
+        <div class="hotline">
+            <div class="hotline-content">
+                <h2>Traffic Management Office</h2>
+                <p class="number"><strong>Phone Number:</strong> 223-9936</p>
+                <p>For traffic-related issues, road safety, and accident reports.</p>
+            </div>
+        </div>
+    </div>
 </div>

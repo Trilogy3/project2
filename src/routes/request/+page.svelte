@@ -36,86 +36,10 @@
 
         alert("Your request has been submitted successfully!");
     };
-
-    import './request.css';
 </script>
 
-<<style>
-    /* Ensures body takes up full viewport height and prevents overflow */
-    html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        overflow: hidden; /* Prevents scrolling */
-        font-family: 'Poppins', sans-serif;
-        background-color: #f2f2f2;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #fff;
-        color: black;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-        max-width: 600px; /* Set max width for larger screens */
-        width: 90%; /* Adjust width to fit the screen without overflow */
-        box-sizing: border-box;
-        margin: 0 auto; /* Centers the container */
-        height: auto;
-    }
-
-    .form-section {
-        margin-bottom: 20px;
-    }
-
-    label {
-        display: block;
-        margin-bottom: 8px;
-        font-weight: bold;
-    }
-
-    input[type="text"],
-    input[type="number"],
-    select,
-    textarea {
-        width: 100%; /* Takes full container width */
-        padding: 10px;
-        margin-bottom: 15px;
-        border: none;
-        border-radius: 5px;
-        background-color: #f9f9f9;
-        color: #333;
-        box-sizing: border-box;
-    }
-
-    textarea {
-        resize: vertical;
-    }
-
-    .form-section label input[type="checkbox"] {
-        margin-right: 8px;
-    }
-
-    button[type="submit"] {
-        width: 100%; /* Full-width button */
-        padding: 12px;
-        background-color: #4caf50;
-        color: white;
-        font-size: 1em;
-        font-weight: bold;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    button[type="submit"]:hover {
-        background-color: #45a049;
-    }
+<style>
+    @import './request.css';
 </style>
 
 <div class="container">

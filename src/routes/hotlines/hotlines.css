@@ -1,10 +1,64 @@
-body {
+/* Container and General Styles */
+.container {
+    background-color: rgba(255, 76, 76, 0.7); /* Transparent background */
     color: white;
-}
-h1 {
-    font-size: clamp(2rem, 3vw + 1rem, 4rem);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 40px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-p {
-    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.5rem);
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+/* Hotline Container Styles */
+.hotline-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items onto a new row if there's not enough space */
+    gap: 20px;
+}
+
+/* Hotline Box Styles */
+.hotline {
+    flex: 1 1 calc(33.33% - 20px); /* Make each item one-third width with space */
+    min-width: 250px; /* Minimum width to help with responsiveness */
+    background-color: #ffffff; /* Solid color with transparency */
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #030303;
+}
+
+.hotline h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #4caf50;
+}
+
+.hotline .number {
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hotline-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    
+    .hotline {
+        flex: 1 1 100%; /* Each hotline takes full width on mobile */
+    }
 }
