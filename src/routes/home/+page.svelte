@@ -6,6 +6,7 @@
    */
     function handleButtonClick(type) {
         alert(`${type} emergency hotline called!`);
+        // Replace alert with actual call functionality
     }
 </script>
 
