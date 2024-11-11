@@ -31,7 +31,7 @@
     h1 {
         font-size: 2.5em;
         margin-bottom: 15px;
-        color: white;
+        color: rgb(0, 0, 0);
     }
 
     p {
