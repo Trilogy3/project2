@@ -85,6 +85,7 @@
         background-color: #27ae60;
         transform: translateY(-2px);
     }
+    @import './src/routes/styles.css';
 </style>
 <div class="navbar">
     <button class="icon-button" aria-label="Menu button">
