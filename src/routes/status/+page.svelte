@@ -31,7 +31,7 @@
     h1 {
         font-size: 2.5em;
         margin-bottom: 15px;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
 
     p {
@@ -87,15 +87,9 @@
     }
     @import './src/routes/styles.css';
 </style>
-<div class="navbar">
-    <button class="icon-button" aria-label="Menu button">
-        <svg class="w-6 h-6 text-gray-800 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6H6m12 4H6m12 4H6m12 4H6"/>
-        </svg>
-    </button>
-    <h1>Status</h1>
-</div>
+
 <div class="container">
+    <h1>Status</h1>
     <p>Indicate your current status by selecting an option below:</p>
 
     <div class="button-container">
