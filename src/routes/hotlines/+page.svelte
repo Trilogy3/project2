@@ -1,9 +1,15 @@
 <script>
     import './hotlines.css';
 </script>
-
-<div class="container">
+<div class="navbar">
+    <button class="icon-button" aria-label="Menu button">
+        <svg class="w-6 h-6 text-gray-800 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6H6m12 4H6m12 4H6m12 4H6"/>
+        </svg>
+    </button>
     <h1>Emergency Hotlines</h1>
+</div>
+<div class="container">
     <p class="description">If you need assistance, please contact one of the following hotlines:</p>
     
     <div class="hotline-container">
