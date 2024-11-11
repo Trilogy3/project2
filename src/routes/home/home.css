@@ -17,23 +17,24 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.emergency-container h2 {
+.emergency-container h1 {
     color: #444;
-    margin-bottom: 30px;
-    font-size: 28px;
+    margin-bottom: 10px;
+    font-size: 24px;
     font-weight: 700;
 }
 
-/* Button Container */
-.button-label {
-    display: block;
-    font-size: 14px;
-    color: #fff;
-    margin-top: 8px;
-    text-align: center;
+.emergency-container p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
 }
 
-
+/* Button Container */
+.button-container {
+    display: flex;
+    gap: 20px;
+}
 
 /* Circle Buttons */
 .circle-button {

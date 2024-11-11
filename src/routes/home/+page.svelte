@@ -11,7 +11,11 @@
 </script>
 
 <div class="emergency-container">
-    <h2>Emergency Hotline</h2>
+    <!-- Title and Subtitle -->
+    <h1>EMERGENCY HOTLINE AND DISASTER READINESS APPLICATION</h1>
+    <p>Your One Tap Assistance for Emergency!</p>
+
+    <!-- Button Container -->
     <div class="button-container">
         <!-- Fire Button with Icon and Label -->
         <button class="circle-button fire-button" on:click={() => handleButtonClick('Fire')}>
